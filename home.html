@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfath Offset</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/homestyle.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/alfath3.png">
+</head>
+<body>
+    <a name="top"></a>
+
+    <!-- NAVIGATION BAR -->
+    <ul class="nav fixed-top justify-content-center bg-white pt-2 pb-2">
+        <li class="nav-item">
+            <a href="home.html" class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" target="_self"><small>Home</small></a>
+        </li>
+        <li class="nav-item">
+            <a href="katalog.html" class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" target="_self"><small>Katalog</small></a>
+        </li>
+        <li class="nav-item">
+            <a href="harga.html" class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" target="_self"><small>Harga</small></a>
+        </li>
+        <li class="nav-item">
+            <a href="order.html" class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" target="_self"><small>Order</small></a>
+        </li>
+        <li class="nav-item">
+            <a href="kontak.html" class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" target="_self"><small>Kontak</small></a>
+        </li>
+        <li class="nav-item">
+            <a href="#faq" class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" target="_self"><small>FAQ</small></a>
+        </li>
+    </ul>
+
+    <!-- CAROUSEL PERTAMA / BANNER -->
+    <div class="container col-12 mt-5 pb-2 pt-5">
+        <div class="shadow-lg mb-5 bg-body-tertiary rounded">
+            <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active bg-image hover-zoom" data-bs-interval="3000">
+                        <img src="assets/img/banner1.png" class="d-block w-100 rounded" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="assets/img/banner2.png" class="d-block w-100 rounded" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="assets/img/banner3.png" class="d-block w-100 rounded" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="assets/img/banner4.png" class="d-block w-100 rounded" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="assets/img/banner5.png" class="d-block w-100 rounded" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARD MARKETING / AJAKAN -->
+    <div class="container-sm">
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="col">
+                <div class="shadow-lg mb-5 bg-body-tertiary rounded">
+                    <div class="card" style="width: auto;">
+                        <img src="assets/img/yb.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-secondary" style="text-align: center;"><small>CETAK BUKU TAHUNAN</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="shadow-lg mb-5 bg-body-tertiary rounded">
+                    <div class="card" style="width: auto;">
+                        <img src="assets/img/bro.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-secondary" style="text-align: center;"><small>CETAK BROSUR</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="shadow-lg mb-5 bg-body-tertiary rounded">
+                    <div class="card" style="width: auto;">
+                        <img src="assets/img/bk.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-secondary" style="text-align: center;"><small>CETAK BUKU DAN NOVEL</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="shadow-lg mb-5 bg-body-tertiary rounded">
+                    <div class="card" style="width: auto;">
+                        <img src="assets/img/ord.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-secondary" style="text-align: center;"><small>CETAK PACKAGING</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="shadow-lg mb-5 bg-body-tertiary rounded">
+                    <div class="card" style="width: auto;">
+                        <img src="assets/img/cal.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-secondary" style="text-align: center;"><small>CETAK KALENDER</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROBLEM CUSTOMER -->
+    <div class="container-sm mt-5 mb-5 pb-5 text-center">
+        <img src="assets/img/prb.png" class="img-fluid" alt="...">
+        <div class="footeralfat">
+            <a href="https://wa.me/6281246951139" target="_blank">
+            <img src="assets/img/kons.png" class="img-fluid"></a>
+        </div>
+    </div>
+
+    <!-- CARD MENGAPA MEMILIH KAMI -->
+    <div class="container-sm pt-5 pb-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="shadow-lg mb-5 bg-body-tertiary rounded">
+                    <div class="card" style="width: auto;">
+                        <img src="assets/img/why1.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: grey;">Mesin Full Color</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="shadow-lg mb-5 bg-body-tertiary rounded">
+                    <div class="card" style="width: auto;">
+                        <img src="assets/img/why2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: grey;">Mesin Laminating</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="shadow-lg mb-5 bg-body-tertiary rounded">
+                    <div class="card" style="width: auto;">
+                        <img src="assets/img/why3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: grey;">Mesin Offset 72</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GAMBAR MENGAPA MEMILIH KAMI -->
+    <div class="container-sm mb-5 text-center">
+        <img src="assets/img/why.png" class="img-fluid" alt="...">
+    </div>
+
+    <!-- GALLERY CAROUSEL KEDUA -->
+    <a name="faq"></a>
+    <div class="container-sm pt-5">
+        <div class="row">
+            <div class="container col-sm-7 mb-5">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="assets/img/c1.jpg" class="d-block w-100 rounded" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/img/c2.jpeg" class="d-block w-100 rounded" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/img/c3.jpg" class="d-block w-100 rounded" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/img/c4.jpg" class="d-block w-100 rounded" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- FREQEUNTLY ASKED QUESTION / FAQ -->
+            <div class="container col-sm-5 mb-5 mt-2">
+                <div class="text-center mb-4">
+                    <h5><b>FREQUENTLY ASKED QUESTION (FAQ)</b></h5>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Kapan jam kerja operasional Alfath Offset?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><p style="color: grey;"><small>Jam operasional kantor kami adalah Senin-Sabtu: pk. 08.00 - 16.00 WIB (Minggu & tanggal merah libur).</small></p></div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Bagaimana tahapan order hingga produk sampai di tempat saya?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><p style="color: grey;"><small>Tahapan ordernya adalah sebagai berikut : <br><br>
+                            1. Masukkan order melalui website/whatsapp ke nomor kami, atau bisa datang langsung ke kantor kami.<br>
+                            2. Berikan spesifikasi order, jumlah, dan ketentuan kebutuhan tenggat waktu anda.<br>
+                            3. Siapkan desain dalam bentuk vector, tanpa perlu editing tambahan (Editing dari kami dikenakan biaya ekstra).<br>
+                            4. Quotation harga & approval quotation.<br>
+                            5. Pembayaran DP min. 50% bisa melalui bank transfer, atau langsung di kantor kami.<br>
+                            6. Proses proofing & approval.<br>
+                            7. Proses produksi.<br>
+                            8. Pelunasan.<br>
+                            9. Delivery ke tempat anda atau bisa langsung di ambil di kantor kami.<br></small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Saya tidak punya desain, apakah Alfath Offset dapat membantu pembuatan desainnya?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><p style="color: grey;"><small>Bisa, kami menyediakan jasa desain dari nol hingga selesai, dengan harga berdasarkan kerumitan desain.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Berapa MOQ (Minimum Order Quantity) untuk pemesanan?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><p style="color: grey;"><small>MOQ dapat dihitung berdasarkan kebutuhan media apa yang ingin anda cetak. 
+                                Setiap media kertas memiliki MOQ yang berbeda, tergantung kepada spesifikasi media seperti apa yang ingin anda cetak. 
+                                Hubungi kami melalui Whatsapp untuk informasi lebih lanjut.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            Jika saya memesan dalam jumlah besar, apa ada pengurangan biaya?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><p style="color: grey;"><small>Tentu, perhitungan biaya kami juga berdasarkan jumlah dan kelipatan order. 
+                                Jadi semakin banyak jumlah pesanan anda, semakin murah pula harga satuannya.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            Apakah jumlah warna dapat mempengaruhi harga?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><p style="color: grey;"><small>Tentu, dalam banyak kasus banyaknya jumlah warna dapat mempengaruhi harga.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                            Apakah saya bisa memesan di bawah MOQ?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><p style="color: grey;"><small>Tentu bisa, namun akan mempengaruhi harga satuan order menjadi lebih mahal.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                            Media apa saja yang bisa dicetak di Alfath Offset?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><p style="color: grey;"><small>Pada dasarnya, kami menerima cetak segala media kertas seperti : <br><br>
+                            1. Buku, Majalah & Novel<br>
+                            2. Kalender Dinding & Meja<br>
+                            3. Buku Tahunan<br>
+                            4. Poster, Pamflet, Brosur & Booklet<br>
+                            5. Buku Yasin<br>
+                            6. Packaging<br>
+                            7. Dll.<br><br>
+                            Namun kami juga menerima media cetak seperti : <br><br>
+                            1. Banner <br>
+                            2. Spanduk <br></small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLOGAN AKHIR -->
+    <div class="container">
+        <img src="assets/img/ft11.png" class="w-100">
+    </div>
+    
+    <!-- FOOTER -->
+    <footer>
+        <!-- FOOTER PERTAMA -->
+        <div class="container">
+        <hr>
+            <div class="row m-5">
+                <div class="container col-sm-2">
+                    <a href="home.html" target="_self">
+                    <div class="footeralfat2"><img src="assets/img/alfath2.png" width="100px"></div>
+                    </a>
+                    <p style="font-size: x-small; text-align: justify;"><small><b><br>Percetakan Alfath Offset</b><br>
+                        Solusi Cetak Cepat & Murah.</small></p>
+                </div>
+                <div class="container col-sm-3 text-center">
+                    <p style="font-size: x-small; text-align: justify;"><small><b>Copyright</b><br>
+                    &copy; 2024 Alfath Offset Printing Manufacture.<br>
+                    All Rights Reserved.<br>
+                    <i>Todos Los Derechos Reservados.<br>
+                    Tous Droits Réservés.</i><br>
+                    Website Based Homepage.</small></p>
+                </div>
+                <div class="container col-sm-3 text-center">
+                    <p style="font-size: x-small; text-align: justify;"><small><b>Alamat</b><br>
+                    Jl. Munggur 7 & 12 RT 37 RW 10,<br>
+                    Demangan, Gondokusuman, Yogyakarta,<br>
+                    Daerah Istimewa Yogyakarta,<br>
+                    Indonesia.<br>
+                    55221<br>
+                    <a class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" href="https://maps.app.goo.gl/Zoog1QNVzfvpC7qL9" target="_blank">
+                    Google Maps</a></small></p>
+                </div>
+                <div class="container col-sm-2 text-center">
+                    <p style="font-size: x-small; text-align: justify;"><small><b>Kontak</b><br>
+                    Email : alfathoffsetyogya@gmail.com<br>
+                    Telp : +62 274 585374<br>
+                    Jam Operasional Kantor : <br>
+                    Senin - Sabtu<br>
+                    Pk. 08.00 - 16.00 WIB<br>
+                    (Minggu & tanggal merah libur)</small></p>
+                </div>
+                <div class="container col-sm-2 text-center">
+                    <p style="font-size: x-small; text-align: justify;"><small><b>Penulis</b><br>
+                        Muhammad Yusuf Kahfi<br>
+                        23.12.2856<br>
+                        Wildan Fahri Adi Kusuma<br>
+                        23.12.2806<br>
+                        Achmad Naufal Jidan Najib<br>
+                        23.12.2832<br>
+                        Marsellius Rio<br>
+                        23.12.2849</small></p>
+                </div>
+            </div>
+        <hr class="pb-2">
+        </div>
+        <!-- FOOTER KEDUA -->
+        <div class="container text-center pb-4">
+            <div class="row align-items-start">
+                <div class="col-sm-4">
+                    
+                </div>
+                <div class="col-sm-4">
+                    <a class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" href="#top"><p style="font-size: x-small;">back to top</p></a>
+                </div>
+                <div class="col-sm-4">
+                    
+                </div>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>

@@ -1,0 +1,40 @@
+/* TABLE */
+table {
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table,
+th,
+td {
+    padding: 1px 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+td {
+    vertical-align: middle;
+    text-align: middle;
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+    background-color: rgb(255, 213, 73);
+}
+
+/* FOOTER ALFAT */
+.footeralfat:hover{
+    transform: scale(1.1);
+}
+
+.footeralfat{
+    transition: transform .5s;
+}
+
+.footeralfat2:hover{
+    transform: scale(1.05);
+}
+
+.footeralfat2{
+    transition: transform .5s;
+}

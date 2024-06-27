@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Order | Alfath Offset</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="assets/img/alfath3.png">
+    <link rel="stylesheet" href="assets/css/orderstyle.css">
+</head>
+<body>
+    <a name="top"></a>
+    <!-- NAVIGATION BAR -->
+    <ul class="nav fixed-top justify-content-center bg-white pt-2 pb-2">
+        <li class="nav-item">
+            <a href="home.html" class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" target="_self"><small>Home</small></a>
+        </li>
+        <li class="nav-item">
+            <a href="katalog.html" class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" target="_self"><small>Katalog</small></a>
+        </li>
+        <li class="nav-item">
+            <a href="harga.html" class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" target="_self"><small>Harga</small></a>
+        </li>
+        <li class="nav-item">
+            <a href="order.html" class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" target="_self"><small>Order</small></a>
+        </li>
+        <li class="nav-item">
+            <a href="kontak.html" class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" target="_self"><small>Kontak</small></a>
+        </li>
+        <li class="nav-item">
+            <a href="home.html#faq" class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" target="_self"><small>FAQ</small></a>
+        </li>
+    </ul>
+    
+    <!-- CARA ORDER -->
+    <div class="container-sm mt-5 mb-5 pb-5 pt-5 text-center">
+        <img src="assets/img/pporder.png" class="img-fluid" alt="...">
+    </div>
+
+    <!-- FORM ORDER -->
+    <div class="container-sm d-flex justify-content-center pt-5 pb-5">
+        <div class="col-lg-8 col-md-10 form-container">
+            <h5 class="mt-3 text-center">Form Order Percetakan Alfath Offset</h5>
+            <form class="needs-validation" novalidate id="orderForm">
+                <h4>Order Disini</h4>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="namad" class="form-label">Nama Depan</label>
+                        <input type="text" class="form-control" aria-label="First name" id="namad"  required>
+                        <div id="validationServer1Feedback" class="invalid-feedback">
+                            Nama depan harus diisi.
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="namab" class="form-label">Nama Belakang</label>
+                        <input type="text" class="form-control" aria-label="Last name" id="namab"  required>
+                        <div id="validationServer2Feedback" class="invalid-feedback">
+                            Nama belakang harus diisi.
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="nomorHP" class="mb-2">Nomor Handphone</label>
+                    <input type="tel" class="form-control" id="nomorHP" name="nomorHP" placeholder="contoh: 081246951139" pattern="[0-9]{10,15}" required>
+                    <small class="form-text text-muted">Masukkan nomor handphone anda dengan benar</small>
+                    <div id="validationServer3Feedback" class="invalid-feedback">
+                        Nomor HP harus diisi.
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="contoh: alfathoffset@yogya.com" required>
+                    <div id="validationServer5Feedback" class="invalid-feedback">
+                        Email harus diisi.
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <label for="inputAddress" class="form-label">Alamat</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="contoh: Pengok Jl. Munggur No. 7"  required>
+                    <div id="validationServer6Feedback" class="invalid-feedback">
+                        Alamat harus diisi.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <label for="kota" class="form-label">Kota/Kabupaten</label>
+                        <select class="form-select" id="kota" aria-label="Default select example" required >
+                            <option selected disabled value="">Pilih...</option>
+                            <option value="1">Sleman</option>
+                            <option value="2">Yogyakarta</option>
+                            <option value="3">Bantul</option>
+                        </select>
+                        <div class="invalid-feedback">Kota harus dipilih.</div>
+                    </div>
+                    <div class="col-3 mb-3">
+                        <label for="prov" class="form-label">Provinsi</label>
+                        <select class="form-select" id="prov" aria-label="Default select example"  required>
+                            <option selected disabled value="">Pilih...</option>
+                            <option value="1">D.I.Y.</option>
+                            <option value="2">Jawa Tengah</option>
+                            <option value="3">Sumatera Utara</option>
+                        </select>
+                        <div class="invalid-feedback">Provinsi harus dipilih.</div>
+                    </div>
+                    <div class="col-3 mb-3">
+                        <label for="kode" class="form-label">Kode Pos</label>
+                        <input type="text" name="kodepos" id="kode" class="form-control"  required>
+                        <div id="validationServer9Feedback" class="invalid-feedback">Kode pos harus diisi.</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="gambar" class="mb-2">Berkas Desain</label>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="gambar" name="gambar" accept="image/*" required>
+                        <div id="validationServer10Feedback" class="invalid-feedback">Desain harus diunggah.</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="jenisCetakan" class="form-label">Jenis Cetakan</label>
+                    <select class="form-select" id="jenisCetakan"  required >
+                        <option selected disabled value="">Pilih...</option>
+                        <option value="1">Poster</option>
+                        <option value="2">Flyer</option>
+                        <option value="3">Kartu Nama</option>
+                        <option value="4">Brosur</option>
+                        <option value="5">Buku</option>
+                    </select>
+                    <div class="invalid-feedback">Jenis cetakan harus dipilih.</div>
+                </div>
+                <h5>Ukuran Kertas</h5>
+                <div class="mb-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="A4" required>
+                        <label class="form-check-label" for="inlineCheckbox1">A4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="A3"  required>
+                        <label class="form-check-label" for="inlineCheckbox2">A3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Legal"  required>
+                        <label class="form-check-label" for="inlineCheckbox3">Legal</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Letter" required>
+                        <label class="form-check-label" for="inlineCheckbox4">Letter</label>
+                    </div>
+                    <div id="validationServer12Feedback" class="invalid-feedback">Ukuran media kertas harus diisi.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="jumlahOrder" class="mb-1">Jumlah Order</label>
+                    <input type="number" class="form-control" id="jumlahOrder" name="jumlahOrder" placeholder="minimum 50 lembar/pcs" min="50" required>
+                    <small class="form-text text-muted">Jumlah order harus sesuai MOQ</small>
+                    <div id="validationServer13Feedback" class="invalid-feedback">Jumlah order harus diisi.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputAddress" class="form-label">Detail Tambahan</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="contoh: finishing hard cover">
+                </div>
+                <h4>Pembayaran</h4>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"  required >
+                        <label class="form-check-label" for="flexRadioDefault1">Kartu Kredit</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"  required  >
+                        <label class="form-check-label" for="flexRadioDefault2">Kartu Debit</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"  required >
+                        <label class="form-check-label" for="flexRadioDefault3">Virtual Account</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="Pemilik" class="form-label">Nama Pemilik Kartu</label>
+                        <input type="text" name="Pemilik" id="Pemilik" class="form-control" required>
+                        <p class="form-text"><small>Masukkan nama lengkap yang tertera pada kartu.</small></p>
+                        <div id="validationServer15Feedback" class="invalid-feedback">Nama lengkap pemilik kartu harus diisi.</div>
+                    </div>
+                    <div class="col-3">
+                        <label for="kartukredit" class="form-label">Nomor Kartu</label>
+                        <input type="text" name="kartukredit" id="kartukredit" class="form-control"  required>
+                        <div id="validationServer16Feedback" class="invalid-feedback">Nomor kartu harus diisi.</div>
+                    </div>
+                    <div class="col-3">
+                        <label for="cvv" class="form-label">Kode CVV</label>
+                        <input type="text" name="cvv" id="cvv" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Kode CVV harus diisi.
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 pt-3">
+                    <input type="submit" class="btn btn-success" value="kirim">
+                </div>
+            </form>
+            <div class="mb-3 pt-3">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" >
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="1500">
+                            <img src="assets/img/caro1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1500">
+                            <img src="assets/img/caro2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1500">
+                            <img src="assets/img/caro3.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLOGAN AKHIR -->
+    <div class="container">
+        <img src="assets/img/ft11.png" class="w-100">
+    </div>
+    
+    <!-- FOOTER -->
+    <footer>
+        <!-- FOOTER PERTAMA -->
+        <div class="container">
+        <hr>
+            <div class="row m-5">
+                <div class="container col-sm-2">
+                    <a href="home.html" target="_self">
+                    <div class="footeralfat2"><img src="assets/img/alfath2.png" width="100px"></div>
+                    </a>
+                    <p style="font-size: x-small; text-align: justify;"><small><b><br>Percetakan Alfath Offset</b><br>
+                        Solusi Cetak Cepat & Murah.</small></p>
+                </div>
+                <div class="container col-sm-3 text-center">
+                    <p style="font-size: x-small; text-align: justify;"><small><b>Copyright</b><br>
+                    &copy; 2024 Alfath Offset Printing Manufacture.<br>
+                    All Rights Reserved.<br>
+                    <i>Todos Los Derechos Reservados.<br>
+                    Tous Droits Réservés.</i><br>
+                    Website Based Homepage.</small></p>
+                </div>
+                <div class="container col-sm-3 text-center">
+                    <p style="font-size: x-small; text-align: justify;"><small><b>Alamat</b><br>
+                    Jl. Munggur 7 & 12 RT 37 RW 10,<br>
+                    Demangan, Gondokusuman, Yogyakarta,<br>
+                    Daerah Istimewa Yogyakarta,<br>
+                    Indonesia.<br>
+                    55221<br>
+                    <a class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" href="https://maps.app.goo.gl/Zoog1QNVzfvpC7qL9" target="_blank">
+                    Google Maps</a></small></p>
+                </div>
+                <div class="container col-sm-2 text-center">
+                    <p style="font-size: x-small; text-align: justify;"><small><b>Kontak</b><br>
+                    Email : alfathoffsetyogya@gmail.com<br>
+                    Telp : +62 274 585374<br>
+                    Jam Operasional Kantor : <br>
+                    Senin - Sabtu<br>
+                    Pk. 08.00 - 16.00 WIB<br>
+                    (Minggu & tanggal merah libur)</small></p>
+                </div>
+                <div class="container col-sm-2 text-center">
+                    <p style="font-size: x-small; text-align: justify;"><small><b>Penulis</b><br>
+                        Muhammad Yusuf Kahfi<br>
+                        23.12.2856<br>
+                        Wildan Fahri Adi Kusuma<br>
+                        23.12.2806<br>
+                        Achmad Naufal Jidan Najib<br>
+                        23.12.2832<br>
+                        Marsellius Rio<br>
+                        23.12.2849</small></p>
+                </div>
+            </div>
+        <hr class="pb-2">
+        </div>
+        <!-- FOOTER KEDUA -->
+        <div class="container text-center pb-4">
+            <div class="row align-items-start">
+                <div class="col-sm-4">
+                    
+                </div>
+                <div class="col-sm-4">
+                    <a class="nav-link link-secondary link-opacity-75 link-opacity-25-hover" href="#top"><p style="font-size: x-small;">back to top</p></a>
+                </div>
+                <div class="col-sm-4">
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVA SCRIPT -->
+    <script src="assets/js/checkout.js"></script>
+</body>
+</html>
